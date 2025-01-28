@@ -51,3 +51,6 @@ coverage.xml
 
 # Documentation
 docs/_build/
+
+# Data
+data/repos/
