@@ -1,5 +1,4 @@
 import datetime
-import json
 import logging
 import os
 import subprocess
@@ -8,9 +7,10 @@ from typing import Dict, List
 class GitLogAnalyzer:
     def __init__(self, git_remote_url: str):
         self.git_remote_url = git_remote_url
+        
         # Create temp directory for repo
         self.repo_name = os.path.splitext(os.path.basename(git_remote_url))[0]
-        self.repo_path = os.path.join("repos", self.repo_name)
+        self.repo_path = os.path.join("data/repos", self.repo_name)
         os.makedirs(self.repo_path, exist_ok=True)
 
         # Clone repo if it doesn't exist
