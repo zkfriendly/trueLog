@@ -72,7 +72,7 @@ class GitLogAnalyzer:
                 continue
 
         self.logger.info(f"Found {len(periods)} distinct periods")
-        return {k: '\n'.join(v) for k, v in periods.items()}
+        return periods
 
     def analyze_log_chunk_promt(self, chunk: str, promt_context: str) -> str:
         """Generate a prompt for the LLM to analyze a chunk of git commit logs"""
