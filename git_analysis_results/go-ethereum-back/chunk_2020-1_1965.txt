@@ -1,0 +1,7 @@
+1. Key changes and features:
+
+Throughout the observed period, the most significant changes can be seen in the 'core/state' module, including fixing issues related to account resurrection, root hash updates, and state clearing. Several tests were also added or fixed for this module. A significant change was made in the 'core/vm' module, where a dedicated SLOAD gas constant for EIP-2200 was used.
+
+2. Notable patterns:
+
+The leading contributors to the repository during this period are Martin Holst Swende and Péter Szilágyi. There's a consistent focus on testing and bug fixing across several modules. A recurrent pattern is the attention to fixing or handling account resurrections in the core/state module. There's also a demonstrated focus on continuous integration and release cycles, including parameters update, version releases, and the initiation of new release cycles.

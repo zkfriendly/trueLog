@@ -1,0 +1,19 @@
+1. Key Changes and Features:
+    - Peer QoS tracking was moved to its own package and used for the snap.
+    - Core/asm fixed a bug related to "00" prefix numbers.
+    - EIP-1559 was implemented and ethash consensus was updated with the changing EIP3554.
+    - Bugs were fixed in core/forkid and core/rawdb.
+    - Changes in eth/tracers to capture C faults in JSON serialization.
+    - Removal of support for legacy receipt/log storage encoding.
+    - Upgraded github.com/holiman/uint256 to v1.2.0.
+    - Addition of configurable threshold to gas price oracle and support for optional struct fields in rlp.
+    - Implemented EIP-3554 (bomb delay) in consensus/ethash.
+    - Implemented EIP-3529 in core and params.
+    - Updated build to use Go 1.16.4 and VisualStudio 2019.
+    
+2. Notable Patterns:
+    - Bugs were being fixed frequently to refine the development.
+    - Several EIPs (Ethereum Improvement Proposals) were being planned, implemented and fine-tuned.
+    - The development process includes not only the creation of new features but also the improvement of existing ones, such as changing the way of json serialization, getting rid of legacy encoding and optimizing the gas price oracle.
+    - The project looks to be continually upgrading their tools to modern versions, possibly for security or efficiency.
+    - The team appears committed to maintaining the package's robustness, evident through frequent bug fixations to the codebase.

@@ -1,0 +1,14 @@
+1. Key changes and features:
+  - Marius van der Wijden added an optional blockNrOrHash parameter to estimateGas, improving API for Java users (mobile), and fixed regressions in miner.
+  - Gary Rong introduced support for empty range proof in trie & fixed a broken test case.
+  - Rene moved rlpx to a separate package under p2p.
+  - Osoro Bironga improved documentation and names in the accounts/abi package.
+  - Giuseppe Bertone and Péter Szilágyi added features relating to geth inspect and downloader respectively.
+  - Guillaume Ballet and Shude Li made typo corrections while Felix Lange added SplitUint64 in rlp.
+  - Several contributors did refactoring, test additions, and bug fixes in various areas.
+
+2. Notable patterns:
+  - A clear pattern of continuous improvement was observed, with several minor fixes (like typos) and tests being added.
+  - Marius van der Wijden and Gary Rong made multiple appearances suggesting active contribution.
+  - The team prioritized maintenance i.e., refactoring, fixing regressions, updating dependencies. General maintenance & improvement of existing features was prevalent.
+  - GraphQL was merged into HTTP endpoint, signaling a move towards consolidation.

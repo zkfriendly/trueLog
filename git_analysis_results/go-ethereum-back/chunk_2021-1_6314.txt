@@ -1,0 +1,19 @@
+1. Key changes and features:
+
+   - Addition of a database dumptrie command in geth module.
+   - Addition of a GetBalance method in the BlockGen of the core module.
+   - Updates to the newer cloudflare API client in the devp2p module.
+   - Added support for --miner.notify.full flag in the geth module.
+   - Various optimizations and bug fixes in eth/protocols module, including snap sync flaws fix, adding handler performance metrics, using resetting histograms for rare packets and corner case fix in sync head determination.
+   - Minor typos in the p2p module code were fixed.
+   - Introduced a read-only option to the database across all modules.
+   - Support added for eip-712 signing in ledger(system-wide).
+   - Codebase cleanup, typo fixes and minor optimizations done in various modules.
+    
+2. Notable patterns:
+
+   - Significant contributions by Péter Szilágyi and Martin Holst Swende, engaging in code refractoring, bug fixes, and pull request merges.
+   - Several fixes and improvements focused around eth/protocols and cmd/devp2p modules.
+   - Continual efforts to optimize performance and add functionality across the board with emphasis on resolving bugs and issues. 
+   - Frequent updates and code optimization in the core, eth and cmd modules.
+   - Noticeable drive towards increasing the metrics visibility in network activity and snapshot creation, which reflects the continual effort to maintain robustness.

@@ -1,0 +1,18 @@
+1. Key changes and features: 
+   - Added support for EIP-695 (eth_chainId) providing a way for dapps to get the network ID to prevent replay attacks.
+   - Enforced a connection retry limit on server side for P2P connections.
+   - Enhanced the handling of stale requests in ethereum and light-client protocols (LES). 
+   - Introduced various counter metrics exposed for Grafana monitoring.
+   - Improved IPv6 support and added ENR text representation for nodes in p2p. 
+   - Launched debugging tool for devp2p. 
+   - macOS support was disabled for smartcard wallets.
+   - Introduced security policy (SECURITY.md).
+   - Implemented LES/3, a new version of light client protocol for ethereum.
+   - Other changes include avoidance of O_APPEND, removal of unused dependencies, addition of new bootnodes, USB related fixes, command line utilities improvements, etc.
+
+2. Notable patterns: 
+   - There was significant attention towards blockchain network reliability, including retry limits, stale request rejection and metrics exposure.
+   - A specific effort towards improving Ethereum light client protocol (LES) was noticed.
+   - Several changes related to peripheral support, namely USB and Smartcard wallets. 
+   - Regular removal of unused dependencies, ensuring the dependency hygiene. 
+   - The authors notably active during this period were Felix Lange, Péter Szilágyi, and Guillaume Ballet. Some contributors focused on specific areas, for example, Felix and Péter typically committed changes related to the P2P and vendor adjustments.

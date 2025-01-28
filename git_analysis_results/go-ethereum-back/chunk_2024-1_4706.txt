@@ -1,0 +1,27 @@
+1. Key changes and features: 
+   - Tracer bug was fixed in eth/tracers/native. 
+   - Redundant zero check was removed in the core/vm.
+   - Minor speedup was implemented in trie/trienode. 
+   - An in-memory freezer was added in core/rawdb.
+   - ConfigCompatError now prints values instead of pointers. 
+   - Map sizes preallocation got introduced where possible.
+   - Clarification was added to consensus engine config iterations.
+   - Test fixtures for journalling was improved in core/state.
+   - Begin of 1.14.1 release cycle and release of Geth v1.14.0 was noted.
+   - Fixed issue with skeleton reorgs in eth/downloader. 
+   - Added an OnClose Trace Hook in core/tracing.
+   - VMTraceJsonConfig renaming happened in cmd/utils.
+   - Prague contracts were fixed in core/vm.
+   - Light beacon finalized updates requests added.
+   - Various typos across the program were fixed.
+   - Removal of bad block checks from core.
+   - Updates to golang/x repos were made.
+   - New RPC, eth_blobBaseFee, was introduced in eth.
+
+2. Notable patterns: 
+   - Péter Szilágyi appears to be in control of version releases and significant changes to the state.
+   - A lot of changes include optimization tasks (speedups, preallocations).
+   - Several minor corrections like typo and unnecessary checks were removed across various modules.  
+   - Several changes were made to the core state management and testing fixtures.
+   - There was an increase in clone usage for various operations signifying a transition towards higher efficiency.
+   - Testing remains a priority as seen by the number of tests being fixed or implemented.

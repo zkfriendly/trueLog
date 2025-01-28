@@ -1,0 +1,4 @@
+1. Key changes and features:
+   - Snapshots were enabled by default by contributor Péter Szilágyi.
+   - Seal verification was removed from the consensus engine interface by contributor Guillaume Ballet.
+   - Fix

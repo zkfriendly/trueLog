@@ -1,0 +1,13 @@
+1. Key changes and features:
+
+- Initiation of the v1.10.11 release cycle and release of go-ethereum v1.10.10 started by Felix Lange.
+- Various bug fixes and problematic areas addressed such as the data race in layer flattening, fixing go-critic linter warnings, and fixing typos in messages or comments.
+- Feature enhancement or changes in API like adding basic support for error types, adding rpc method to obtain the state's access, and refactoring transact method.
+- Several test case modifications and corrections, including adding tests for forked blocks retrievable by hash and fixing TestPendingLogsSubscription.
+- Few Dependencies were upgraded like goja and karalabe/usb.
+
+2. Notable Patterns:
+ 
+- Felix Lange and Marius van der Wijden made multiple commits addressing different areas.
+- Many commits are aimed at fixing bugs and issues related to tests, typos, and improving code integrity.
+- Certain commits are dedicated to upgrading dependencies, showing a commitment to applying up-to-date and secure tools.

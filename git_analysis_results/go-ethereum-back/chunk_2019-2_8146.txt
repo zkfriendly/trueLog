@@ -1,0 +1,12 @@
+1. Key changes and features:
+- Addition of new fork and update in fork-id configuration performed by Martin Holst Swende for Ethereum.
+- Péter Szilágyi has put efforts to enhance ETH's handshake packet, make fork-filter API uniform, added precision to validation and ensured better verification during handshake.
+- A fix has been provided for miner import time allowance and assembly parser label.
+- Several merge requests addressed, continuing test suite for Istanbul from developers.
+- Changes for disabling seek compaction in the ETH database.
+
+2. Notable patterns:
+- Szilágyi Péter made significant contributions to forkId and eth/64 handshake improvements.
+- Work on ETH miner settings and tests from Gary Rong.
+- Minor fixes and improvements mostly related to ETH operations, some tweaks in the README files related to HTTP/HTTPS.
+- Fixes aimed at improving stability, like fixing data race in downloader, updating LES ENR entry for servers, addressing the github ‘P’ capitalization.

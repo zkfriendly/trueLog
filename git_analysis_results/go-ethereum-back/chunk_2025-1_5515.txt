@@ -1,0 +1,18 @@
+1. Key changes and features:
+   - The state history v2 was implemented.
+   - There has been a fix implemented on state revert for v2 history.
+   - The TOML file now supports the configuration of NAT.
+   - A version upgrade was performed on gencodec to stable v0.1.0.
+   - The ChainID in SetCodeTx copy method got initialized.
+   - There were changes made to chainId check for pragueSigner.
+   - A feature was added to ensure the API timeoutLoop terminates with the event system.
+   - The go.mod toolchain line was removed.
+   - The subpool reset goroutine terminates if the pool was closed.
+   - There was a build upgrade in the version of Go to 1.23.5.
+
+2. Notable patterns:
+   - Multiple upgrades and fixes were made related to chainID and core/types.
+   - Enhancement of the functionality of resetting goroutines and event systems was a major area of work.
+   - Typos and formatting errors in code and comments were fixed in multiple commits, indicating ongoing documentation and code cleanliness.
+   - Core functionalities such as state histories and configuration files underwent significant changes or implementations.
+   - Other notable patterns include removing unused functions, fixing flaky test, and enhancing logger functionalities.

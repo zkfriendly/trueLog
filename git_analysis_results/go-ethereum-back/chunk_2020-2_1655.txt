@@ -1,0 +1,20 @@
+1. Key changes and features
+   - Added support for expressive origin rules in ws.origins
+   - Fixed a panic in the metrics when reading empty CPU stats
+   - Disabled recording pre-images of trie keys
+   - Improved LES (Light Ethereum Subprotocol) test on windows and removed retesteth
+   - Fixed usage of *reflect.SliceHeader in the Ethash consensus protocol
+   - Refined comment styles in several sections of the code
+   - Set events Raw field in Parse methods in ABI (Application Binary Interface) template
+   - Implemented EIP-2565 modexp repricing
+   - Fuzzers were improved
+   - Released Geth v1.9.24 and v1.9.25 cycle began
+   - Fixed several issues in p2p simulation adapters, and optimized derivesha in rlp
+   - Various fixes and improvements made to the build, including the addition of a -dlgo flag, and stopping building for Ubuntu Eoan and Go 1.13.
+
+2. Notable patterns
+   - Several key changes were made to improve test coverage, such as improvements to fuzzers and the LES test on windows.
+   - Fixes and other changes were made by a variety of contributors, demonstrating a collaborative effort.
+   - The team seems to be making many optimizations and minor modifications, indicating a mature project in maintenance mode.
+   - Regular release cycle: v1.9.24 was released and soon after v1.9.25 cycle began.
+   - Some modernization changes towards newer system versions and dropping support for outdated ones.

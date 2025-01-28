@@ -1,0 +1,22 @@
+1. Key changes and features:
+
+   - Removed unneeded initialization in trie/utils (#30472).
+   - Invoked OnCodeChange-hook on selfdestruct in core/state (#30686).
+   - CLI dependencies were removed in beacon/blsync (#30720).
+   - Benchmarking supported in cmd/evm using 'statetest' command and filters added (#30442).
+   - Support for EIP-712 array types extended in signer/core (#30620).
+   - Dynamic transaction supported in accounts/usbwallet (#30180). 
+   - Based on given block, basefee is set for AccessList rather than a chain’s tip (#30538). 
+   - Testcase created for createAccessList in ethclient/gethclient. Now in table-driven format (#30194).
+   - Added RevertErrorData function and its example in ethclient (#30669).
+   - Updated Github's GoLang JWT dependency from 4.5.0 to 4.5.1 (#30728).
+   - Removed 'personal' RPC namespace (#30704).
+   - DeleteRange feature added in ethdb (#30668).
+   - Added holesky config and updated checkpoints in beacon/blsync (#30671).
+
+2. Notable patterns: 
+
+   - Multiple code optimizations and fixes in the system to improve efficiency and functionality.
+   - Testcases were constructed for several modules, indicating a focus on testing and validation.
+   - Several commits from Péter Szilágyi are focused on removing unused or low-use types and flags, indicating a clean-up of legacy or redundant code.
+   - Committer 'jwasinger' focused on enhancements and modifications related to benchmarking and transactions.

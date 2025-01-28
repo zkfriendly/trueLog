@@ -1,0 +1,23 @@
+Summary:
+
+1. Key Changes and Features:
+    - Support for Ubuntu Kinetic was removed due to deprecation (a16d757cd)
+    - Upgraded goja in go.mod (509cd428e) 
+    - Support restored for txlookuplimit flag in cmd/utils (68855216c)
+    - Support for optional blob sidecar in BlobTx was added (2a6beb6a3)
+    - Upgraded c-kzg-4844 in go.mod, build (e91b21ce2)
+    - Duplication in eip2930 signer removed in core/types (80b76a952)
+    - Release family switched to 1.13 in params to prep for PBSS (e2507a17e)
+    - PBSS activated as an experimental feature (503f1f7ad)
+    - Started v1.12.2 release cycle in params (d9a8b0ff7)
+    - Go-ethereum v1.12.1 released under params (9c216bd6c)
+    - Upgraded supranational/blst to 0.3.11 under deps (86d7f5aee)
+    - Support for yParity field in JSON transactions added in core/types (bb148dd34)
+    - -dlgo version upgraded to Go 1.20.7 (8224bb921)
+    
+2. Notable Patterns:
+    - There is a consistent effort in code optimizations and refactoring like fixing typos, removing unused parameters, or refactoring filtering loops signifying commitment to maintain code quality.
+    - Regular tests are being carried out to ensure code functionality, as seen in changes where tests have been added and tuned for performance.
+    - Frequent upgrades are made to language versions and dependencies (go.mod with goja and c-kzg-4844, blst with supranational/blst).
+    - Parameters are continuously adapted to cater to upcoming releases, and new experimental features are being activated.
+    - Deprivation of software and features that aren't of use anymore plays a vital role in the development process; evident through ubuntu kinetic deprecation.

@@ -1,0 +1,16 @@
+1. Key Changes and Features:
+   - Evgeny Poberezkin has done majority of the commits, including several merges, updates on events, webinars and the readme, and version updates (8.2.0 & 8.1.0).
+   - Dependabot-preview has upgraded to GitHub-native Dependabot.
+   - Sahil Agarwal has updated the 'managing-schemas.md'.
+   - Erik Brinkman added checks for strict null checks and made improvements to JSONSchemaType for records.
+   - Rouven Weßling created browser bundles with rollup instead of browserify.
+   - Hans Klunder and Evgeny updated the Readme.
+   - CFixes on TypeScript were done by Kentaro Ueda.
+   - Notable documentation updates/fixes were done by Delapouite and Lydia.
+   - Elsaid Achraf added a unicodeRegExp option.
+
+2. Notable Patterns:
+   - Most merges, version updates, and ReadMe updates were done by Evgeny Poberezkin.
+   - Notable contributions appear to have been uploaded then merged as a pull request rather than directly committed.
+   - Major changes were divided into smaller tasks and committed separately such as improvements to JSONSchemaType for records and addition of the unicodeRegExp option. 
+   - There was an active effort in fixing bugs and improving documentation.

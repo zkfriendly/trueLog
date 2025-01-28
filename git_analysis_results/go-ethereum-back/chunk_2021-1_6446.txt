@@ -1,0 +1,16 @@
+1. Key changes and features:
+    - Added ResubscribeErr in events (#22191).
+    - Fixed potential deadlock in filter timeout loop in eth/filters (#22178).
+    - Prefetcher was converted to a concurrent per-trie loader in core/state (#21047).
+    - Upgraded golang-lru in go.mod (#22134).
+    - Added new config field 'SyncFromCheckpoint' to eth, les (#22123).
+    - Fixed issues in tests/fuzzers/abi, seal timeout in consensus/ethash, and issues with graphql via numerous pull requests. 
+    - Implemented fixes and enhancements to cmd/geth and cmd/faucet for shutting down gracefully when disk is full, updating embedded website assets, setting USB, etc.
+    - Improved log messages in eth and tests (#22146, #22140)
+
+2. Notable patterns:
+   - Regular testing and issue fixing, specifically about testing failures or issues in the GraphQL interface.
+   - Several enhancements are done by Péter Szilágyi, who also frequently merges pull requests from others.
+   - Regular optimizations and refactoring, e.g., the prefetcher conversion and the switch of Facebook authentication to the mobile site in cmd/faucet (#22137).
+   - Inclusion of logging or generation logs to observe status or changes in more detail, e.g., "snapshot: add generation logs to storage".
+   - Usage of pull requests to improve updates and implement fixes or enhancements on the codebase.

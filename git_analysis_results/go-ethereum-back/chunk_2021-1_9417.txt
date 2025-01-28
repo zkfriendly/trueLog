@@ -1,0 +1,14 @@
+1. Key changes and features:
+   -  Crypto section introduced the gofuzz build directives (#23137).
+   -  Eth section has multiple entries including an increase in downloader block body allowance (#23074).
+   -  Blockhash has been removed from statedb (#23126).
+   -  IPC probe issue was fixed in the les test (#23094).
+   -  eth/tracers expose contextual information including block hash, tx hash, and tx index.
+   -  Addition of feeHistory API (#23033).
+   -  Docker steps and docker support have been introduced in Travis and Build (#23082). 
+
+2. Notable patterns:
+   -  A lot of issues associated with typos, incorrect method names, and wrong comments were fixed. 
+   -  The contributors working on ETH and crypto issues seem to have been particularly active.
+   -  Péter Szilágyi often merges pull requests and has made several key contributions such as enabling experimental docker for manifest building. 
+   -  Docker-related work seems to have been prioritized during this period.

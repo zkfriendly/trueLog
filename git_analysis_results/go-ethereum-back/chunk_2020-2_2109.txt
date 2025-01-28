@@ -1,0 +1,12 @@
+1. Key changes and features:
+   - Updated CHTs for v1.9.21 and v1.9.20 releases.
+   - Removal of Whisper from the codebase and the list of package binaries.
+   - Several bug fixes, including issues with personal.sign(), getTypeSize method, and null JSON-RPC messages. 
+   - Addition of a few functionalities such as "Downloader queue stats", trace_call on top of arbitrary blocks and support for chain id retrieval in graphql.
+   - Memory leak fixed and memory use has been stabilized. 
+   - Update goja dependency in go.mod and goleveldb update.
+
+2. Notable patterns:
+   - Multiple commits were made by Péter Szilágyi, indicating active involvement in the project.
+   - Majority of the bug fixes were related to the core functionalities and essential modules like 'eth', 'trie', etc.
+   - Systematic version updates noted with special changes for specific releases.

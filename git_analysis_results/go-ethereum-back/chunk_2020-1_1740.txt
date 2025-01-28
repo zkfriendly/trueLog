@@ -1,0 +1,19 @@
+1. Key Changes and Features:
+   - Upgrade to golangci-lint 1.24.0 (#20901) to ensure code quality.
+   - Initial discovery v5 implementation (#20750) enhancing the underlining p2p network communication.
+   - Documentation fixes in clef (#20900) were made for better clarity.
+   - Issue template was updated linking Discord instead of Gitter (#20896).
+   - Discv5 protocol audits were added to the docs (#20898).
+   - Callcontext struct were used in core/vm (#20761) and metrics enabled for geth import command (#20738).
+   - Flaky tests in 'eth' and 'les' modules were fixed (#20897).
+   - Several goroutine leaks were fixed across the project (#20667).
+   - Int256 unpacking optimization in accounts/abi (#20850).
+   - New 'debug_accountRange' API added to 'eth' module (#19645).
+   - Update to README with Istanbul specific specification for the private network (#20841).
+
+2. Notable Patterns:
+   - Several bug fix and optimizations done for improving tests.
+   - Several Timer.Stop calls missing in tests were noted and corrected by ucwong.
+   - Felix Lange and Martin Holst Swende consistently contributing to the project.
+   - Multiple efforts seen to remove goroutine leaks improving the overall efficiency.
+   - The use of discord instead of gitter in some cases, indicating a potential shift in communication platform.

@@ -1,0 +1,20 @@
+1. Key changes and features:
+    - Moved chain freezer to a deeper folder (#25487)
+    - Improved read and update operations of accounts (#25458)
+    - Trie committer was reworked (#25320)
+    - No-op path removed from the node module (#25475)
+    - Resolver embedded in graphql instead of backend interface (#25468)
+    - Gas estimation functionality updated for eth_createAccessList, now doesn't estimate gas if no limit is provided (#25467)
+    - Preallocated batch size in bloomIndexer to enhance performance (#25289)
+    - Added ReadHeaderTimeout config option in node's RPC (#25338)
+    - Ethtest module was updated (#25306)
+    - DAG temp files removed during Ethash consensus (#25381)
+    - FeeHistory support added to ethereum and ethclient modules (#25403)
+    - JWT expiry now set to 60 seconds in node module (#25416)
+
+2. Notable patterns:
+    - Multiple commits focusing on fixing minor issues such as bugs and typos.
+    - Significant enhancements made in the core and eth modules.
+    - A clear focus on improving performance in different parts of the codebase (e.g., preallocating batch size, avoiding unnecessary gas estimations).
+    - Several code cleanups and removals of redundant/unneeded code.
+    - Added test support and updates, showing an emphasis on quality assurance.

@@ -1,0 +1,20 @@
+1. Key changes and features:
+    - Improved RPC checking of handler methods.
+    - Ethereum API changes: account creation returns EIP-55 format; refactoring of block serialization; `EstimateGas` uses `latest` block by default.
+    - Removal of unused error-returns, unused return value, and unused ContractCode method for cleanup purposes.
+    - Websocket now respects the "HTTP_PROXY" by default.
+    - Upgrade of the crypto library to v0.2.0.
+    - Applying KZG cryptography; change in transaction marshalling.
+    - Initialization of maps with known sizes for different sections of the project.
+    - Error reporting enhancement for block import failure and context key issues.
+    - The addition of `txHash` field on txTraceResult.
+    - Removal of ethash pow, retaining only necessary shims.
+    - Repaired a name conflict in the accounts/abi section.
+    - An addition of block overrides to `eth_call`.
+ 
+
+2. Notable patterns:
+    - Multiple projects saw map initialization with known sizes, likely an optimization effort.
+    - Several typo-fixes and refactorings were done, indicating a potential focus on code quality.
+    - There are multiple contributions by "ucwong", showing they are a key developer during this period. 
+    - Multiple enhancements made to internal/ethapi area, showing an emphasis on improving Ethereum API.

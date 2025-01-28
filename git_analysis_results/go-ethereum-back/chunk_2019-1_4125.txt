@@ -1,0 +1,25 @@
+1. Key Changes and Features:
+
+- Introduction of LocalStore metrics and integration into storage for the swarm component.
+
+- Google+ authentication is no longer supported.
+
+- Upgraded Go to version 1.12.5.
+
+- Addition of logger for unit tests (internal/testlog).
+
+- Changes to block handling including handling missing block states and avoiding overhead of creating a new block.
+
+- Various fixes including data race fixes, typo fixes, and fixing export db.Put signature.
+
+- Added a note about backing up the keystore.
+
+2. Notable Patterns:
+
+- Several authors made multiple commits throughout this period, Péter Szilágyi and gary rong made the most contributions.
+
+- The team spent significant effort on debugging and typo fixes indicating an attention to detail and focus on stability.
+
+- There was also significant work on enhancing and optimizing the swarm component.
+
+- The logs also show an emphasis on block handling within the codebase.

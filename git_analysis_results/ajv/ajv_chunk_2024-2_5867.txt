@@ -1,0 +1,12 @@
+1. Key changes and features:
+   - Documentation errors like typos and grammatical mistakes were corrected by Renato Monteiro.
+   - Jason Ian Green fixed issues #2482 (Infinity and NaN serializing to null), #2217 (clarification of custom keyword naming) and made changes for '@typescript-eslint/array-type' rule.
+   - A feature allowing tree-shaking was added by Jos de Jong by inserting `"sideEffects": false` to `package.json`.
+   - Jason Ian Green introduced a new feature testing for encoded refs and bumped fast-uri.
+   - The project version was updated to 8.17.1 by Jason Ian Green.
+
+2. Notable patterns:
+   - Jason Ian Green was the dominant contributor during this period, working on fixing issues, updating the version, and introducing new features. 
+   - Typo and grammar fixes in the documentation were made mainly by Renato Monteiro.
+   - Fixes usually were referenced to specific open issues in the project's issue tracker.
+   - New features and fixes were often followed by version bumping.

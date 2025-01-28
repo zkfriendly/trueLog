@@ -1,0 +1,15 @@
+Summary:
+   
+Key Changes and Features:
+1. Made the signature of ContractCode hash-independent (PR #27209 by Guillaume Ballet)
+2. Added verkle fork management and upgraded go-verkle (PR #27464 by Guillaume Ballet)
+3. Allowed sending of large transactions via announce/retrieve method only (PR #27618 by Marius van der Wijden)
+4. Added UpdateContractCode to the Trie interface (PR #27476 by Guillaume Ballet)
+5. Improved state reader in parts of the system (PR #27428 by rjl493456442)
+6. Eth_getProof response now quantity-encodes storage keys (PR #27309 by James Prestwich)
+
+Notable Patterns:
+1. Significant contributions by developer Guillaume Ballet, mainly focusing on ContractCode and Verkle forks.
+2. A series of pull requests from Dan Laine aimed at using the slices package for sorting in various areas of the system.
+3. Noticeable activity in fixing typos and minor errors in the codebase documentation and comments.
+4. Modifications made across cmd, core/state, eth, trie, internal/ethapi among others.

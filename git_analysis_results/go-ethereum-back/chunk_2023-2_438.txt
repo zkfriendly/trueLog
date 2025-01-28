@@ -1,0 +1,13 @@
+1. Key changes and features
+ - A significant upgrade was made to the -dlgo version to Go 1.21.5.
+ - Several bugs were fixed, notable ones include fixing the ns/µs mismatch in RPC metrics, invalid tracking of received time for block in eth/fetcher, and fixing 32-bit tests when CGO_ENABLED=0 in crypto/secp256k1.
+ - There was a removal of a dependency in ethdb/pebble and deactivation of BLS fuzzer when CGO_ENABLED=0 in tests/fuzzers/bls12381.
+ - Several tests were set to run in parallel to increase efficiency.
+ - Command line tools provided additional features, like a command to export preimages in Snap enumeration order and support for --dev flag in dumpgenesis.
+ - TODO comment about subscription was removed in ethereum files, and unnecessary indirection was dropped in eth and internal/ethapi.
+  
+2. Notable patterns
+ - There were numerous bug fixes and optimizations which improve the performance of the codebase. 
+ - Martin Holst Swende and Guillaume Ballet are frequent contributors. 
+ - Improvements and fixes were made across different parts of the project including metrics, builds, tests, command-line tools, and crypto operations.  
+ - There is a pattern of removing unused and unnecessary code/components, for example, the 'light' package, light client code, and some indirection.

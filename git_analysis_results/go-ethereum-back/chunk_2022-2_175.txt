@@ -1,0 +1,22 @@
+1. Key changes and features:
+   - Implemented gc-friendly structure in core/state to replace fastcache code cache.
+   - In core/vm, jumptable deep copy enabled when activating extra eips.
+   - Printing of first N accounts on startup added in cmd/clef.
+   - Added query timeout to graphql.
+   - New nodekey commands added to cmd/devp2p.
+   - Addition of `Address.Big` in common/types.
+   - Implementation of per-source timeout in FairMix (p2p/enode).
+   - New multiplexing tracer added in eth/tracers.
+   - Support for eth/68 added in cmd/devp2p/internal/ethtest.
+   - Discv5 NODES response packing improved under p2p/discover.
+   - Deduplication of work + show payload id featured in eth/catalyst, miner.
+   - Addition of importraw feature to clef.
+   - Recommit mechanism for payload building implemented in miner, eth.
+   - Fix of trace call for inner reverts.
+   
+2. Notable patterns:
+   - A lot of work was done around cmd/clef and cmd/devp2p, indicating a focus on updating and enhancing command-line interface operations.
+   - There has been an emphasis on networking protocols and p2p communication, with changes in p2p/enode and p2p/discover.
+   - Safety and security enhancements also made with features like query timeout addition in graphql and quoting untrusted data in error messages (in accounts/abi).
+   - There was some focus on refining tracer capabilities in eth/tracers.
+   - Multiple fixes of bugs and minor issues were also carried out like typo correction, handling of wrong HTTP batch response length and fixing handling of distance 256 in lookupDistances.

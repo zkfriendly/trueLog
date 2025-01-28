@@ -1,0 +1,12 @@
+1. Key changes and features:
+    - Removal of code for old unsupported go-versions (#28090).
+    - Initiation of v1.13.1 release cycle and release of Geth v1.13.0.
+    - Several bug fixes, most notably: calculation of blob gasprice in tx receipt (#28082), min gas limit error message (#28085), and rlp decoding flaw during offload (#28027).
+    - Cleanup operations like cleanup trie database (#28062) and regenerating all indirect dependencies to clean up unnecessary data (#28037).
+    - Addition of new features and improvements: `shouldOverrideBuilder` to payload envelope (#28029) and addition of support for the Holesky testnet (#28007).
+    
+2. Notable patterns:
+    - There are frequent references to "eth/catalyst" - indicating updates and refinements specific to the Ethereum Catalyst feature.
+    - Geth releases v1.13.0 and initiation of v1.13.1 indicating ongoing improvements and refinements to the Geth software.
+    - Usage of go.mod for dependencies pull/management, suggesting the regular updating of project dependencies.
+    - Edits by Péter Szilágyi, Martin Holst Swende, and lightclient appearing multiple times, demonstrating active code contribution from these individuals.

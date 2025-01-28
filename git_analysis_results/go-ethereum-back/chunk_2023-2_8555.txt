@@ -1,0 +1,13 @@
+1. Key changes and features
+   - Performance improvements: in RPC subscription notification encoding, test execution speed, allocation reduction, and avoiding double-closing of an iterator inside PebbleIterator.
+   - Code readability fixes: clearer error context in unpack errors, context info on unpack-errors, and improved method-to-string conversion readability.
+   - Housekeeping: typos corrections, comment spelling corrections, upgrade to Go 1.21 and 1.21.4, whitespace removal, and errors refactor checked by staticcheck (ST1005).
+   - Test related changes: run tests in parallel in various modules, new test cases for eth_getProof RPC and logging.
+   - Bug fixes: valid block range error message, correct error from trie iterator, and yParity type in graphql changed from Long to BigInt.
+   - Functional changes: made 'v' optional for DynamicFeeTx and BlobTx in core/types.
+
+2. Notable patterns
+   - A common focus on improving test handling and execution performance across the commits.
+   - Regular typo fixes and readability improvements.
+   - Several commits by Håvard Anda Estensen, focusing on parallelizing tests and Go version updates.
+   - Several updates from Delweng concentrating on performance improvements and minor exception handling.

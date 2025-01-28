@@ -1,0 +1,16 @@
+1. Key Changes and Features:
+
+- The team worked mainly on les and core/types, with several fixes such as solving a p2p.Protocal.PeerInfo issue and correcting a cumulative gas bug.
+- The Go version was twice upgraded, first to 1.12.3 then 1.12.4.
+- Transaction receipt handling was changed, with transaction receipts now being stored without txHash and gasCost.
+- Swarm version was bumped due to Geth hotfix release and also due to Geth maintenance release.
+- An issue of resource leaks in tests was corrected in cmd/swarm.
+- Ledger derivation path was switched to a canonical one.
+
+2. Notable Patterns:
+
+- Péter Szilágyi and Felföldi Zsolt were prominently contributing.
+- There seems to be emphasis on receipt functionality optimization and cleaning up the Swarm version for Geth hotfix releases.
+- There were multiple updates to deal with bugs and minor fixes, including context handling, pairing instruction messages, and vendor config leftovers.
+- They started optimizing their code to use the latest versions of Go and made fixes to adapt to these changes.
+- There were updates to the pairing instruction messages, warning texts, and README for more efficient communication and documentation.

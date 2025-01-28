@@ -1,0 +1,10 @@
+1. Key Changes and Features:
+   - Merge pull request to fix constantinople issue
+   - Drop '--override.constantinople' command in cmd, eth, les, param
+   - Refresh clef and signer tutorial and fix noticed issues
+   - Updated function parameter in accounts/abi/bind
+   - Fixed method overwriting issue in accounts/abi
+
+2. Notable Patterns:
+    - Multiple contributions from Péter Szilágyi on the same day, showing an active development from this contributor. He was focused on issues related to 'constantinople' and issues in cmd/clef and signer.
+    - There's a pattern of addressing issues in accounts/abi module with commits from Guillaume Ballet and zer0to0ne.

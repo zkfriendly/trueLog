@@ -1,0 +1,15 @@
+1. Key changes and features:
+    - Addition of Ubuntu 21.10 PPA target to the build process.
+    - Generation of RLP encoder code.
+    - Beginning of the v1.10.17 release cycle for go-ethereum.
+    - Implementation of NewBatchWithSize API, NodeBlob API, and the snap protocol.
+    - Bump in graphql-go dependency to v1.3.0.
+    - Improved error handling in WaitMined and clean-up of tracer collection.
+    - Addition of eth.getLogs wrapper and setting Request.GetBody for client requests.
+    - Fix of dev mode datadir readonly regression.
+
+2. Notable patterns:
+    - Various minor fixes (typos, incorrect types etc).
+    - Multiple contributions from the same authors (such as Martin Holst Swende, Felix Lange, and Péter Szilágyi).
+    - Regular merge pull requests, indicating a consistent review and merge workflow.
+    - Frequent additions of new features/implementations along with updates of the existing dependencies.

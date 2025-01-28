@@ -1,0 +1,14 @@
+1. Key Changes and Features:
+    - Updated reference tests: Test references got updated for better efficiency.
+    - Core fix: Address order was corrected in queue.
+    - Parameters fix: Broken linter was fixed and Goerli bootnodes were updated.
+    - DB enhancements: Introduced remote (readonly) databases for added support and a command has been added to verify integrity of trie nodes.
+    - Code Improvement: Replaced ioutil with os and io for better utility. Also, used strings.EqualFold for string comparison, and replaced strings.Replace with string.ReplaceAll.
+    - VM enhancement: Reduced overhead in instructions benchmark. Also, optimized Memory.Set32 for better performance.
+    - Alerts and commands: Added a deprecation warning for Rinkeby and incorporated debug_getRawReceipts RPC method.
+
+2. Notable Patterns:
+    - There were several fixes and updates relating to the core, virtual machine (VM), and parameters.
+    - Significant updates to bring in more efficiency in testing and debugging were noticeable.
+    - Several refinements were made to code for better performance by using more efficient functions or libraries.
+    - Multiple contributors made enhancements and fixes, reflecting collaborative development.

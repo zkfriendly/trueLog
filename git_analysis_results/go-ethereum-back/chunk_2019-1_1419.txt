@@ -1,0 +1,22 @@
+1. Key changes and features:
+- Bump failure counter only if no nodes were provided.
+- Users can now specify the number of empty accounts to derive.
+- Fixed several bugs and enhanced code by adhering to review feedback.
+- Sanitization of JSON input was conducted for safer operations.
+- Refreshing the account list became possible during the initialization of the card.
+- The direct dependency on libpcsclite was removed.
+- Full transaction signature and sending was achieved.
+- Upgraded to keycard app version v2.1.1.
+- Implemented a temporary fix to the ADBU status call.
+- Updated code and fixed several linter issues.
+- Set Rinkeby Petersburg fork block.
+- Upgraded to Go version 1.12.2.
+- Removed support for les/1 4096 block CHT sections.
+- Nuked GETh bug (it wasn't used anymore).
+
+2. Notable patterns: 
+- Guillaume Ballet, Felix Lange, and Péter Szilágyi featured the most in the logs.
+- Numerous linter issues were detected and resolved.
+- Review feedback was continuously utilized in multiple commits to improve the project.
+- There were several code cleanups, format fixings, and updates to improve execution.
+- Noticeable iterative development and collaboration trend, with a clear focus on enhancing code quality and functionalities.

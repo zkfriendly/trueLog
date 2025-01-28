@@ -1,0 +1,13 @@
+1. Key Changes and Features:
+    - Several database commands were added to the geth command line interface, including stats, compact, put, get, and delete.
+    - The Light Ethereum Subprotocol (LES) server handler underwent various changes and improvements, including clean up, a fix for balance expiration, and renaming of "lespay" to "vflux".
+    - Go was bumped to version 1.16 in the Travis, Appveyor, and build configurations.
+    - Implementations were done to the Ethereum (eth) protocol, including implementation of the eth66 protocol and optimizations to the transaction broadcast mechanism.
+    - Fixes were made to the node, trie, state, and pruner of the core.
+    - Handling case of normal EOF in Stream.readFull was improved.
+
+2. Notable Patterns:
+    - Most of the work was centered on the 'les', 'core', and 'geth' components of the system.
+    - There were numerous bug fixes and optimizations, especially surrounding Ethereum Light Service (LES), Core, and Ethereum (ETH) protocols.
+    - Péter Szilágyi was heavily active in this commit period, focusing mainly on fixes and optimizations.
+    - Changes by Martin Holst Swende often involved optimizing or adding to the command line interface (geth).

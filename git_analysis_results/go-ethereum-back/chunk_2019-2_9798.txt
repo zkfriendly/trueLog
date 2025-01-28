@@ -1,0 +1,14 @@
+1. Key Changes and Features:
+
+   - Various fixes to blake2b crypto hash function were introduced.
+   - The implementation of Ethereum Improvement Proposals (EIPs) like 2200 and 2028 took place, leading to optimizations and changes.
+   - The core saw updates such as the addition of SSE, AVX and AVX2 code, as well as logging of chain reorg/split metrics.
+   - Upgraded to Go version 1.12.9.
+   - The release of Geth versions 1.9.2 and beginning of the v1.9.3 release cycle.
+   - Notable fixes in typo errors and grammar in comments across multiple files.
+
+2. Notable Patterns:
+
+   - Most significant commits were done by developers Péter Szilágyi and gary rong.
+   - The theme of the updates revolves around cryptographic implementations, core optimizations, and implementation or optimization of EIPs.
+   - Majority of the updates relate to Ethereum’s core protocol with references made to Ethereum specific terminologies such as EIPs, Geth, and blockchain specific terms such as cryptographic hashes.

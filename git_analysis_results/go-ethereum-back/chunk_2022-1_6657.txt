@@ -1,0 +1,13 @@
+1. Key Changes and Features:
+    - Started development cycles for go-ethereum v1.10.20 and v1.10.21.
+    - Several typos and linter warnings were fixed across various modules.
+    - StorageSize test coverage has been improved and there's an upgrade to golangci-lint v1.10.2
+    - The build system now supports custom UDP port for p2p discovery and auto-completion scripts have been added to the .deb package.
+    - Migrated to urfave/cli/v2 and upgraded to the latest goleveldb for Go modules.
+    - Removed the "shh" RPC API, the version field from rpc.API, `public` field from `rpc.API`, and the concept of public/private API definitions.
+    - Added sepolia network support to cmd/faucet.
+  
+2. Notable Patterns:
+    - Felix Lange and lightclient had multiple commits, revolving around starting new release cycles and improvements in RPC APIs respectively.
+    - Frequent typo corrections, suggesting a strong focus on code integrity and readability.
+    - Several fixes and improvements related to the build system.

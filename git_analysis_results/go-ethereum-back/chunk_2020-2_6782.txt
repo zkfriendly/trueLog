@@ -1,0 +1,10 @@
+1. Key changes and features:
+   - Default RPC gascap has been set to 25M with a more explanatory error message in the event of an error (#21229).
+   - Improvements to core and transaction pool leading to less allocation when managing transactions (#21232).
+   - The List header allocation has been avoided in RLP encoder to enhance efficiency (#21274).
+   - A LES priority client test has been added as part of CMD/geth feature (#20719).
+
+2. Notable Patterns:
+   - There were significant improvements targeting efficiency and error handling.
+   - Marius van der Wijden contributed multiple commits towards improving system performance and resource allocation.
+   - The changes have been carried on diverse aspects of the system from RPC to encoding, and transaction handling to client testing.

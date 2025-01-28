@@ -1,0 +1,19 @@
+1. Key Changes and Features:
+
+- 'go mod tidy' to tidy dependencies.
+- Cross-compilation setup was improved.
+- Utilized eth DNS tree for snap discovery.
+- A warning was removed from database upgrade initialization.
+- Removal of non-essential codes like 'toAddr helper' and redundant return.
+- Guerrilla testing was also done for lesser bugs as well as removing bugs that caused crashes.
+- Comment fixing and code cleanup.
+- Numerous merges of pull requests were made to enhance existing features and bug fixes.
+
+2. Notable Patterns:
+
+- The main contributors to this repository are Félix Lange, Péter Szilágyi, and Aaron Buchwald based on the commit frequency.
+- There were several improvements relating to snap and eth.
+- Commits also include the refinement of comments in the code and fixing typos.
+- There is a focus on error handling and optimization, with several commits removing unnecessary code and handling errors more efficiently.
+- A number of merges were made from 'karalabe', indicating the user’s contributions to the features.
+- Regular maintenance is shown through numerous test fixes and updates.

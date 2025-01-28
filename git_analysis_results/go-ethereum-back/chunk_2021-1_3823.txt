@@ -1,0 +1,17 @@
+1. Key changes and features:
+    - Enhanced the estimated price's stability in the eth/gasprice protocol.
+    - Fixed tests and added early sanity checks for cmd/devp2p and eth/protocols/eth.
+    - Rescheduling and clean-up enhancements in the p2p/tracker.
+    - Support for req/rep RTT tracking was added to eth/protocols and prp/tracker.
+    - The build was upgraded to both Go 1.16.3 and golangci-lint v1.39.0.
+    - Made enhancements in discv5 handling of IPv4-in-IPv6 addresses in p2p/discover.
+    - Support for EIP-2930 transactions was added into account/external and signer/core.
+    - Introduced a support for authentication via ssh agent in cmd/puppeth.
+    - ethash block reward was disabled in catalyst mode.
+    - Upgraded gopsutils to v3.21.4 in go.mod file.
+  
+2. Notable patterns:
+    - Several changes were made by Martin Holst Swende and Péter Szilágyi, indicating they are key contributors.
+    - Some protocols received multiple updates such as eth/protocols and p2p/tracker.
+    - There are a considerable number of bug fixes, enhancing features and new feature addition in this period.
+    - Multiple improvements were made to tests to enhance code quality.

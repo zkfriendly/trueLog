@@ -1,0 +1,12 @@
+1. Key changes and features:
+   - The release of Geth v1.9.10 
+   - Various bug fixes and improvements were made including fixing a chain indexer unit test, updating CHTs for the new release, and improving Android and Windows builders.
+   - Various changes were made regarding the handling of server loops, listener goroutines, and modifications to the build of golangci.
+   - Changes were made to the handling of transaction size.
+   - The EthAPIBackend creation was initially refactored but was later reverted.
+
+2. Notable patterns: 
+   - Péter Szilágyi is a significant contributor, often merging pull requests and making changes to version releases and the upgrading of Android and Windows builders.
+   - Frequent updates were made to improve the performance and stability of the software, showing a high frequency of testing and iteration on the project.
+   - Felix Lange and Gary Rong often worked on bug fixes and testing logistics.
+   - Many changes were related to building, testing, and release of new versions.

@@ -1,0 +1,17 @@
+1. Key changes and features:
+    - Implementation of "BLOBBASEFEE" opcode (0x4a)
+    - The introduction of a configurable option for wsMessageSizeLimit
+    - Enhancement of the validation error in eth/catalyst
+    - The dev synctarget was switched to hash from block
+    - Pebble stats were exposed in addition to levelDB
+    - Removal of header rollback mechanism in eth/downloader
+    - Fixing of bootnodes config priority in cmd/utils
+    - Fixed the bug wherein "eth_call" block parameter was considered mandatory, which is now optional
+    - The update of the 4788 beacon roots contract address in the params.
+    - Beginning of Geth v1.13.3 release cycle and the earlier release of Geth v1.13.2.
+ 
+2. Notable patterns:
+    - A pattern of several minor bug fixes and typographical error fixes across different files can be noticed.
+    - Péter Szilágyi made significant contributions with multiple commits during this period.
+    - There were a few minor changes in code formatting and fixing of typos.
+    - Fixes and updates in the 'core' and 'eth' directories were frequent, highlighting active work in these areas.
