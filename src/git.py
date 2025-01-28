@@ -78,27 +78,46 @@ class GitLogAnalyzer:
         """Generate a prompt for the LLM to analyze a chunk of git commit logs"""
         self.logger.info(f"Analyzing chunk for period ({len(chunk)} characters)")
         
-        prompt = f"""Analyze this section of git commit logs given the following context and provide a brief summary of:
-        1. Bulletpoints of Milestones and key features achieved
-        2. Notable patterns
-        
-        Context:
+        prompt = f"""You are an expert Git commit log analyzer with deep experience in software development patterns and project management.
+
+        Task: Analyze the provided git commit logs in the context of the project and generate a comprehensive yet concise summary.
+
+        Required Analysis:
+        1. Key Milestones & Features:
+           - Identify major project milestones and significant features
+           - Focus on user-facing changes and architectural improvements
+           - Highlight any breaking changes or important refactoring
+
+        2. Development Patterns:
+           - Identify recurring themes in development
+           - Note any shifts in development focus
+           - Observe code quality and testing patterns
+           - Detect potential technical debt indicators
+
+        Project Context:
         {promt_context}
-        
-        Example Response:
-        
+
+        Format your response strictly as follows:
+
         [milestones]
-        - Milestone 1
-        - Milestone 2
-        - Milestone 3
-        
+        • Major milestone or feature
+          - Supporting details or sub-features
+        • Next milestone...
+
         [patterns]
-        - Pattern 1
-        - Pattern 2
-        - Pattern 3
-        
-        Git logs:
+        • Pattern observation
+          - Supporting evidence
+          - Impact assessment
+        • Next pattern...
+
+        Git Commit Logs to Analyze:
         {chunk}
+
+        Remember to:
+        - Be specific
+        - Focus on substantial changes over minor updates
+        - Consider the project context in your analysis
+        - Maintain objectivity in your observations
         """
 
         return prompt
