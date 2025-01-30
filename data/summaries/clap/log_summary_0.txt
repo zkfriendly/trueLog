@@ -1,0 +1,47 @@
+[description]
+A command-line argument parser library.
+
+[milestones]
+• Dynamic Completion Engine Overhaul
+    - Introduced a dynamic completion engine, allowing for customized completions based on shell context.
+    - Added support for more shells beyond Bash, including Zsh, Fish, Elvish, PowerShell, and Nushell.
+    - Deprecated the old static completion system.
+• Improved Help and Usage Output
+    - Help messages were made more concise and consistent.
+    - Added support for styling help output using ANSI codes.
+    - Allowed flattening subcommand help and usage for simpler display.
+• Enhanced Value Parsing and Validation
+    - Introduced the ValueParser trait for customized value parsing.
+    - Implemented support for various value types, including paths, numbers, and enums.
+    - Improved error messages for invalid values.
+• ArgGroup Enhancements
+    - Added APIs for accessing and managing grouped arguments.
+    - Improved error handling for ArgGroups with default values.
+• Performance and Code Size Optimizations
+    - Reduced allocations and improved build times.
+    - Removed several dependencies.
+    - Switched to more efficient string types internally.
+• Transitioned to Edition 2021
+    - Updated to Rust Edition 2021.
+• Breaking Changes in Version 4.0.0
+    - Removed deprecated APIs, including those related to SubCommand, possible_values, and several ArgSettings methods.
+    - Renamed several types and functions for consistency and clarity, such as App to Command.
+
+[patterns]
+• Iterative Development and Refinement
+    - Many commits focus on improving specific aspects of the API, error handling, or help output based on user feedback and bug reports.
+• Focus on Backwards Compatibility
+    - Several milestones involve deprecating old APIs rather than removing them outright, providing migration paths for users.
+• Performance Awareness
+    - Recurring theme of optimizing for speed and reducing code size.
+• Community Contributions
+    - Many improvements and bug fixes are contributed by the community.
+• Extensive Testing
+    - Commits frequently include tests for new features, bug fixes, and UI changes.
+• Documentation Improvements
+    - Significant effort towards improving documentation and examples, particularly in the derive and tutorial sections.
+• Use of Unstable Features
+    - Use of unstable feature flags to experiment with new functionality and APIs before stabilization.
+• Potential Technical Debt
+    - Unstable features, while useful for experimentation, can create technical debt if not carefully managed and stabilized or removed when appropriate.
+    - Some early design decisions required significant refactoring to support new features or improve performance, suggesting potential accumulation of technical debt over time.

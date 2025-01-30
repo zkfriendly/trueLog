@@ -74,13 +74,18 @@ class GitLogAnalyzer:
         self.logger.info(f"Found {len(periods)} distinct periods")
         return periods
 
+    def split_log_by_max_token_size(self, log_text: str, max_token_size: int) -> List[str]:
+        """Split git log into chunks of specified maximum token size, ensuring commits aren't split"""
+        self.logger.info(f"Splitting git log into chunks of {max_token_size} tokens")
+        return [log_text[i:i+max_token_size] for i in range(0, len(log_text), max_token_size)]
+
     def analyze_log_chunk_promt(self, chunk: str, promt_context: str) -> str:
         """Generate a prompt for the LLM to analyze a chunk of git commit logs"""
         self.logger.info(f"Analyzing chunk for period ({len(chunk)} characters)")
         
         prompt = f"""You are an expert Git commit log analyzer with deep experience in software development patterns and project management.
-
-        Task: Analyze the provided git commit logs in the context of the project and generate a comprehensive yet concise summary.
+        
+        Task: Analyze the provided git commit logs in the context of the project and generate a comprehensive yet concise, short, without any markdown formatting and to the point summary.
 
         Required Analysis:
         1. Key Milestones & Features:
@@ -103,6 +108,9 @@ class GitLogAnalyzer:
         {promt_context}
 
         Format your response strictly as follows:
+
+        [description]
+        A short description of the project
 
         [milestones]
         • Major milestone or feature
