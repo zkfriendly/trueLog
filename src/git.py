@@ -84,16 +84,21 @@ class GitLogAnalyzer:
 
         Required Analysis:
         1. Key Milestones & Features:
-           - Identify major project milestones and significant features
-           - Focus on user-facing changes and architectural improvements
-           - Highlight any breaking changes or important refactoring
+            - Identify major project milestones and significant features
+            - Focus on user-facing changes and architectural improvements
+            - Highlight any breaking changes or important refactoring
 
         2. Development Patterns:
-           - Identify recurring themes in development
-           - Note any shifts in development focus
-           - Observe code quality and testing patterns
-           - Detect potential technical debt indicators
+            - Identify recurring themes in development
+            - Note any shifts in development focus
+            - Observe code quality and testing patterns
+            - Detect potential technical debt indicators
 
+        Remember to:
+            - Be specific
+            - Focus on substantial changes over minor updates
+            - Consider the project context in your analysis
+            - Maintain objectivity in your observations
         Project Context:
         {promt_context}
 
@@ -101,14 +106,14 @@ class GitLogAnalyzer:
 
         [milestones]
         • Major milestone or feature
-          - Supporting details or sub-features
-        • Next milestone...
+            - Supporting details or sub-features
+        • Next milestones...
 
         [patterns]
         • Pattern observation
-          - Supporting evidence
-          - Impact assessment
-        • Next pattern...
+            - Supporting evidence
+            - Impact assessment
+        • Next patterns...
 
         Git Commit Logs to Analyze:
         {chunk}

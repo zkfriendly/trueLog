@@ -1,4 +1,4 @@
-[
+{"repositories": [
   "https://github.com/ajv-validator/ajv",
   "https://github.com/alexeyraspopov/picocolors",
   "https://github.com/alloy-rs/core",
@@ -26,7 +26,6 @@
   "https://github.com/erigontech/erigon",
   "https://github.com/eslint/eslint",
   "https://github.com/eth-infinitism/account-abstraction",
-  "https://github.com/ethereum/go-ethereum",
   "https://github.com/ethereum/remix-project",
   "https://github.com/ethereum/solc-js",
   "https://github.com/ethereum/solidity",
@@ -116,4 +115,4 @@
   "https://github.com/yahoo/serialize-javascript",
   "https://github.com/yarnpkg/yarn",
   "https://github.com/zloirock/core-js"
-]
+]}
