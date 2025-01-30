@@ -34,10 +34,16 @@ if __name__ == "__main__":
     for index, git_remote_url in enumerate(repositories, start=1):
         logger.info(f"Processing repository {index}/{total_repos}: {git_remote_url}")
         
-        git_log_analyzer = GitLogAnalyzer(git_remote_url)
         repo_name = git_remote_url.split("/")[-1]  # Extract repository name from URL
         logger.info(f"Processing repository: {repo_name}")
         
+        # Check if a summary already exists for this repository
+        summary_dir = f"data/summaries/{repo_name}"
+        if os.path.exists(summary_dir):
+            logger.info(f"Summary already exists for {repo_name}. Skipping.")
+            continue
+        
+        git_log_analyzer = GitLogAnalyzer(git_remote_url)
         git_log = git_log_analyzer.get_git_log()
         commits = git_log_analyzer.split_log_by_max_token_size(git_log, 400000)
 
