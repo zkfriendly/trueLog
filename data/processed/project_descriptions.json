@@ -1,7 +1,7 @@
 {
   "quic-go": "Go QUIC implementation: performance-optimized, secure, HTTP/3 support, using standard library TLS & generics.",
   "lighthouse": "Lighthouse: Rust Ethereum consensus client focused on performance, stability, and Eth2 feature implementation.",
-  "mocha": "No description available for mocha",
+  "mocha": "Mocha: JavaScript test framework with async support, rich matchers, and a flexible reporter API.",
   "js-crc32": "Fast JavaScript CRC32 library with rolling checksums, optimized for various environments.",
   "eslint-plugin-import": "ESLint plugin enforcing import best practices, resolving paths, with TypeScript support and performance optimizations.",
   "coinbase-wallet-sdk": "Coinbase Wallet SDK: Connect dApps via WalletLink, injected providers, and smart wallets (iOS/Android).",
