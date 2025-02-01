@@ -1,26 +1,70 @@
 [description]
-Rollup, a JavaScript module bundler, underwent significant development with a focus on performance enhancements, new features like JSX support, improved developer experience with an enhanced REPL and detailed error messages, and a major architectural shift towards native/WASM code with the adoption of the SWC parser.
+Rollup, a JavaScript module bundler, has evolved significantly from its early stages of establishing core features to incorporating advanced optimizations and architectural shifts.  Initially focused on optimizing ES module code, Rollup now boasts enhanced performance, support for modern JavaScript features like JSX, an improved developer experience, and a transition towards native/WASM code using the SWC parser.
 
 [milestones]
-• Rollup 4.0: Introduced SWC parser and native/WASM code, marking a major architectural change, impacting performance and potentially plugin compatibility.
-• JSX Support (4.24.0): Introduced JSX support, expanding Rollup's capabilities for modern JavaScript development.
-• Enhanced REPL: Multiple improvements to the REPL, including support for logging, better colors, and more available options, improved developer experience.
-• Detailed Error Messages & Locations: Enhanced error messages with location information and improved logging for better debugging.
-• Performance Enhancements: Continuous focus on performance optimizations, especially in chunking and module resolution.
-• Improved Documentation: Revamped website using Vitepress, improved architecture documentation, and ongoing refinements.
-• Enhanced Tree-shaking: ongoing refinements and bug fixes to tree-shaking, leading to smaller bundle sizes.
-• Support for New Syntax: Ongoing addition of support for modern JavaScript syntax like decorators, import assertions, and optional chaining.
-• Wider Platform Support: Added support for more platforms like FreeBSD, Linux LoongArch, ppc64le, s390x.
+• Initial Commit: Basic functionality established.
+• v0.20.0: Plugin support.
+• v0.25.0: Browser-friendly build process.
+• v0.30.0: Acorn options support.
+• v0.32.0: Switch tests from Babel to Buble.
+• v0.33.0: Plugin hooks introduced; Support for multiple output targets.
+• v0.34.0: `--watch` implemented.
+• v0.35.0: Deconflicting of classes; Upgrade to Acorn 4.
+• v0.36.0: Support for template literals; Automatic semicolon insertion.
+• v0.37.0: Tree-shaking improvements; More lenient handling of `export default`; Gather possible values for external declarations.
+• Rollup 4.0: Introduced SWC parser and native/WASM code.
+• 4.24.0: Introduced JSX support.
+• Enhanced REPL: Multiple improvements including logging, colors, and options.
+• Detailed Error Messages & Locations: Improved error messages and logging.
 
 [patterns]
-• Regular Releases: Consistent releases indicate active maintenance and development.
-• Performance Focus: Recurring performance improvements across different areas suggest a commitment to optimization.
-• Community Contributions: Many commits from external contributors demonstrate a healthy and active community.
-• Documentation Improvements: Regular documentation updates suggest a focus on user experience.
-• Security Updates:  Security vulnerabilities are addressed promptly, showing attention to security best practices.
-• Dependency Updates: Active dependency management with Renovate shows a focus on keeping dependencies up-to-date.
-• Shift to Native Code: The introduction of the SWC parser and WASM code marks a strategic shift towards using native code, which has significant performance implications.
-• Experimental Feature Introductions:  Incremental introduction of experimental features like minChunkSize and logging side effects allows for community feedback and iterative improvement.
-• Addressing Technical Debt:  Refactoring efforts and code cleanups indicate a commitment to addressing technical debt, though potential for more remains in older parts of the codebase.
-• Increased use of Rust:  Growing usage of Rust for core parts of the bundler shows a strategic investment in long-term performance and maintainability.
-• Testing & Code Quality:  Comprehensive testing and linting practices, including the introduction of clippy, suggest a commitment to code quality.
+• Performance optimization:
+    - Tree-shaking improvements.
+    - Caching resolved IDs.
+    - Performance labels for debugging.
+    - AST cloning for incremental rebuilds.
+    - Continuous focus on performance, especially in chunking and module resolution.
+    - Shift to Native Code (SWC/WASM) for performance gains.
+• Code quality and testing:
+    - Introduction of ESLint and linting tests.
+    - Expansion of test suite.
+    - Codecov integration for coverage reports.
+    - Comprehensive testing and linting, including clippy.
+• Refactoring and architectural changes:
+    - Rewriting of internal components.
+    - Switch from Babel to Buble for tests.
+    - Introduction of the Scope class.
+    - Major architectural shift with SWC parser and WASM.
+    - Increased use of Rust for core components.
+• Bug fixes:
+    - Numerous bug fixes, especially regarding external modules and default exports.
+    - Sourcemap generation fixes.
+    - Ongoing refinements and bug fixes to tree-shaking.
+• Feature development:
+    - Implementation of core Rollup features (tree-shaking, code splitting, module format support).
+    - Incremental build support.
+    - JSX support.
+    - Support for new syntax (decorators, import assertions, optional chaining).
+    - Wider platform support.
+• CLI improvements:
+    - Addition of CLI options (`--watch`, `--config`, `--no-strict`, `--environment`, etc.).
+    - Improved error reporting.
+• Documentation:
+    - Gradual improvement of the README.
+    - Changelog updates.
+    - Revamped website using Vitepress; improved architecture documentation.
+• Legacy support:
+    - `legacy` option for older browsers.
+• Project management:
+    - Use of Greenkeeper/Renovate for dependency updates.
+    - Use of issue and pull request templates.
+• Technical debt indicators:
+    - Skipped tests due to pending issues.
+    - Workarounds for older Node.js versions.
+    - Comments indicating "TODO" or messy code.
+    - Addressing technical debt through refactoring and code cleanups.
+• Community Contributions: Active community contributing code.
+• Security Updates: Promptly addressing security vulnerabilities.
+• Experimental Feature Introductions: Iterative improvement through experimental features (e.g., minChunkSize).
+
+

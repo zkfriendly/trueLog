@@ -32,9 +32,32 @@ def process_repository(git_remote_url: str, model: genai.GenerativeModel) -> boo
         logger.info(f"Processing repository: {repo_name}")
         
         # Check if a summary already exists for this repository
-        summary_dir = f"data/summaries/{repo_name}"
+        summary_dir = f"data/summaries/{repo_name}/log_summary_0.txt"
         if os.path.exists(summary_dir):
             logger.info(f"Summary already exists for {repo_name}. Skipping.")
+            # Check if there are more than one log_summary files
+            summary_files = [f for f in os.listdir(f"data/summaries/{repo_name}") if f.startswith("log_summary_") and f.endswith(".txt")]
+            if len(summary_files) > 1:
+                if os.path.exists(f"data/summaries/{repo_name}/log_summary_0_main.txt"):
+                    return True
+                # Prepare prompt for Gemini to merge summaries
+                prompt = "Merge the following summaries with the same format and structure into a single summary:\n"
+                for file in summary_files:
+                    with open(f"data/summaries/{repo_name}/{file}", "r") as f:
+                        prompt += f.read() + "\n"
+                
+                # Generate response using Gemini
+                response = model.generate_content(prompt)
+                
+                # Rename the original log_summary_0.txt to log_summary_0_main.txt
+                os.rename(f"data/summaries/{repo_name}/log_summary_0.txt", f"data/summaries/{repo_name}/log_summary_0_main.txt")
+                logger.info(f"Renamed log_summary_0.txt to log_summary_0_main.txt")
+                
+                # Store the merged summary in log_summary_0.txt
+                with open(f"data/summaries/{repo_name}/log_summary_0.txt", "w") as file:
+                    file.write(response.text)
+                logger.info(f"Stored the merged summary in log_summary_0.txt")
+                
             return True
         
         git_log_analyzer = GitLogAnalyzer(git_remote_url)

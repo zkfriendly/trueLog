@@ -2,50 +2,42 @@
 Web3.py is a Python library for interacting with Ethereum. It provides APIs for various Ethereum functionalities, including contract interaction, transaction management, ENS resolution, and more.
 
 [milestones]
-• Middleware Refactor (v7.0.0):
-    - Introduced a new middleware system to improve modularity and extensibility.
-    - Replaced old middleware functions with classes for better organization and testability.
-    - Improved documentation for middleware and caching.
-• Async Support Enhancements:
-    - Added async support for many core functionalities, including contract interactions, transaction management, and ENS resolution.
-    - Introduced async versions of several providers, including IPCProvider and HTTPProvider.
-    - Provided examples and documentation for using the async APIs.
-• Dropped Python 3.7 Support (v7.0.0):
-    - Removed support for Python 3.7 to streamline development and utilize newer language features.
-• Contract Events API Improvements:
-    - Added sorting and filtering capabilities to contract events.
-    - Provided utility functions for working with event ABIs.
-• Removal of ethpm Module (v7.0.0):
-    - Removed the ethpm module due to deprecation.
-• Batch Requests Support:
-    - Implemented batch request functionality for improved performance when sending multiple JSON-RPC requests.
-• Cancun Network Upgrade Support:
-    - Added support for the Cancun network upgrade, including new transaction fields and RPC methods.
-• ENSIP-15 Support:
-    - Added support for the ENSIP-15 normalization standard.
-• Improved Exception Handling:
-    - Introduced more specific and informative exceptions.
-    - Added user-friendly error messages for improved debugging.
-• WebsocketProviderV2:
-    - Introduced a new websocket provider with improved performance and asynchronous capabilities.
+
+Early Releases (v1.0.0 - v3.4.4):  Focused on foundational features, API stabilization, bug fixes, and performance improvements. Key milestones include:
+    Initial release (v1.0.0) with basic functionality and improved tests/documentation.
+    Contract functionality implementation (v1.3.0).
+    Automatic gas estimation (v1.5.0, v2.5.0).
+    Improved gevent conformity (v2.0.0).
+    Documentation implementation (v2.7.0).
+    SSL connection support (v2.8.1).
+    RPC timeouts and contract API cleanup (v2.8.0).
+    Delegated signing manager (v3.1.0).
+    Gevent connection pooling (v3.2.0).
+    Provider reorganization and documentation (v3.3.0).
+    Dedicated testing module introduction (Tester Module).
+    Numerous bug fixes and API refinements across all releases.
+
+Modernization and Asynchronous Support (v7.0.0 onwards): Introduced major architectural changes and focused on asynchronous programming, alongside ongoing improvements and standard compliance. Key milestones include:
+    Middleware refactor (v7.0.0) for improved modularity and extensibility.
+    Enhanced async support for core functionalities and providers.
+    Dropped Python 3.7 support (v7.0.0).
+    Contract Events API improvements with sorting and filtering.
+    Removal of the deprecated ethpm module (v7.0.0).
+    Batch requests support for improved performance.
+    Cancun network upgrade support.
+    ENSIP-15 support.
+    Improved exception handling with user-friendly messages.
+    Introduction of WebsocketProviderV2 with enhanced performance and asynchronous capabilities.
 
 [patterns]
-• Increased Focus on Asynchronous Programming:
-    - A significant number of commits added async support for existing functionalities and providers.
-    - This indicates a shift towards providing more robust and efficient asynchronous interactions with Ethereum.
-• Deprecation and Removal of Older Features:
-    - Several commits deprecated and removed older features and modules, such as ethpm and Python 3.7 support.
-    - This suggests an effort to modernize the library and reduce technical debt.
-• Emphasis on Code Quality and Testing:
-    - Many commits focused on improving code quality, fixing bugs, and enhancing test coverage.
-    - This demonstrates a commitment to maintaining a high-quality and reliable library.
-• Improved Documentation:
-    - Several commits updated and improved the documentation, making it more comprehensive and user-friendly.
-• Performance Improvements:
-    - Commits related to caching, batch requests, and optimized data structures suggest a focus on enhancing performance.
-• Dependency Updates:
-    - Regular updates to dependencies indicate an effort to keep the library up-to-date and secure.
-• Focus on Standards Compliance:
-    - Commits related to ENSIP-15 and Cancun upgrade support highlight the importance of complying with evolving Ethereum standards.
-• Community Contributions:
-    - The logs show contributions from various developers, indicating an active and engaged community.
+Frequent Releases and Iterative Development: Consistent release tags throughout the log demonstrate agile methodology and responsiveness to issues/feedback.
+Focus on API Improvements and Bug Fixes: Many commits relate to refining APIs, fixing errors, and improving RPC compliance, demonstrating commitment to usability and stability.
+Emphasis on Testing and Code Quality:  Regular test updates, integration of testing modules, and addressing issues indicate a focus on robust software development practices.
+Refactoring and Code Reorganization: Commits related to reorganizing providers, cleaning up code, and refactoring efforts suggest active maintenance and improvement of the codebase.
+Dependency Management: Several commits address dependency issues and updates, showing awareness of external library dependencies and their impact.
+Documentation Updates: Commits targeting documentation improvements reflect a focus on providing clear and comprehensive documentation for users.
+Performance Optimization: Commits aimed at speeding up tests, RPC interactions, and other optimizations demonstrate concern for performance and efficiency.
+Increased Focus on Asynchronous Programming: Significant effort was dedicated to adding and enhancing async support, indicating a shift towards more efficient Ethereum interactions.
+Deprecation and Removal of Older Features:  Removal of older features and modules, like ethpm and Python 3.7 support, shows an effort to modernize the library and reduce technical debt.
+Focus on Standards Compliance:  Support for ENSIP-15 and Cancun upgrade highlights the importance of complying with evolving Ethereum standards.
+Community Contributions: Contributions from various developers indicate an active and engaged community.
