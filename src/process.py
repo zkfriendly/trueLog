@@ -42,7 +42,7 @@ def process_dataset(input_path: str, output_path: str) -> None:
             project = row[project_col]
             
             if project not in project_descriptions:
-                description_path = f"data/summaries/{project}/description.txt"
+                description_path = f"data/summaries/{project}/log_summary_0.txt"
                 
                 with open(description_path, 'r') as f:
                     project_descriptions[project] = f.read().strip()
@@ -59,4 +59,4 @@ def process_dataset(input_path: str, output_path: str) -> None:
     logger.info(f"Completed processing dataset to {output_path}")
 
 if __name__ == "__main__":
-    process_dataset("data/dataset.csv", "data/dataset_with_descriptions.csv")
+    process_dataset("data/dataset.csv", "data/dataset_with_log_summary.csv")
